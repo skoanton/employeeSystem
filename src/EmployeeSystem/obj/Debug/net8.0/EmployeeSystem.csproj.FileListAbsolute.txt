@@ -1,0 +1,14 @@
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/bin/Debug/net8.0/EmployeeSystem
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/bin/Debug/net8.0/EmployeeSystem.deps.json
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/bin/Debug/net8.0/EmployeeSystem.runtimeconfig.json
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/bin/Debug/net8.0/EmployeeSystem.dll
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/bin/Debug/net8.0/EmployeeSystem.pdb
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/obj/Debug/net8.0/EmployeeSystem.GeneratedMSBuildEditorConfig.editorconfig
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/obj/Debug/net8.0/EmployeeSystem.AssemblyInfoInputs.cache
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/obj/Debug/net8.0/EmployeeSystem.AssemblyInfo.cs
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/obj/Debug/net8.0/EmployeeSystem.csproj.CoreCompileInputs.cache
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/obj/Debug/net8.0/EmployeeSystem.dll
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/obj/Debug/net8.0/refint/EmployeeSystem.dll
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/obj/Debug/net8.0/EmployeeSystem.pdb
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/obj/Debug/net8.0/EmployeeSystem.genruntimeconfig.cache
+/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/obj/Debug/net8.0/ref/EmployeeSystem.dll
