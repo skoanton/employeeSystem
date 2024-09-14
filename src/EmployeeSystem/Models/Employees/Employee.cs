@@ -5,19 +5,25 @@ using System.Threading.Tasks;
 
 namespace EmployeeSystem.Models.Employees
 {
-    public class Employee
+    public abstract class Employee
     {
-        private string firstName;
-        private string lastName;
-        private string email;
-        private DateTime dateOfBirth;
+        protected string firstName;
+        protected string lastName;
+        protected string email;
+        protected DateTime dateOfBirth;
+        protected string employeeId;
+        protected double tax = 0.15;
 
+        protected double vacationDays;
+
+        public abstract double CalculateSalary();
 
         public string FirstName
         {
             get { return firstName; }
             set { firstName = value; }
         }
+
         public string LastName
         {
             get { return lastName; }
@@ -26,19 +32,54 @@ namespace EmployeeSystem.Models.Employees
         public string Email
         {
             get { return email; }
-            set { email = value; }
+            set
+            {
+                if (value.Contains("å"))
+                {
+                    value = value.Replace("å", "a");
+
+                }
+                if (value.Contains("ä"))
+                {
+                    value = value.Replace("ä", "a");
+                }
+                if (value.Contains("ö"))
+                {
+                    value = value.Replace("ö", "o");
+                }
+                email = value.ToLower();
+
+            }
         }
         public DateTime DateOfBirth
         {
             get { return dateOfBirth; }
-            set { dateOfBirth = value; }
+            set
+            {
+                dateOfBirth = value;
+            }
         }
+
+        public string EmployeeId
+        {
+            get { return employeeId; }
+            private set { employeeId = value; }
+        }
+
+        public double VacationDays
+        {
+            get { return vacationDays; }
+            set { vacationDays = value; }
+        }
+
         public Employee(string firstName, string lastName, DateTime dateOfBirth)
         {
             FirstName = firstName;
             LastName = lastName;
-            Email = $"{firstName}.{lastName}@mail.com";
+            Email = $"{FirstName}.{LastName}@mail.com";
             DateOfBirth = dateOfBirth;
+            EmployeeId = Guid.NewGuid().ToString();
         }
+
     }
 }
