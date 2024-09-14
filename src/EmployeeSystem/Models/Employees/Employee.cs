@@ -17,6 +17,10 @@ namespace EmployeeSystem.Models.Employees
         protected double vacationDays;
 
         public abstract double CalculateSalary();
+        public virtual string GetEmployeeDetails()
+        {
+            return $"{EmployeeId},{FirstName},{LastName},{email},{DateOfBirth.ToShortDateString()},{vacationDays}";
+        }
 
         public string FirstName
         {
@@ -72,6 +76,15 @@ namespace EmployeeSystem.Models.Employees
             set { vacationDays = value; }
         }
 
+        public Employee(string employeeId, string firstName, string lastName, string email, DateTime dateOfBirth, int vacationDays)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            DateOfBirth = dateOfBirth;
+            EmployeeId = employeeId;
+            VacationDays = vacationDays;
+        }
         public Employee(string firstName, string lastName, DateTime dateOfBirth)
         {
             FirstName = firstName;

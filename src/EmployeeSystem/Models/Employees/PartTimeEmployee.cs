@@ -21,6 +21,12 @@ namespace EmployeeSystem.Models.Employees
             get { return hoursWorked; }
             set { hoursWorked = value; }
         }
+
+        public PartTimeEmployee(string employeeId, string firstName, string lastName, string email, DateTime dateOfBirth, double hourlySalary, int hoursWorked, int vacationDays) : base(employeeId, firstName, lastName, email, dateOfBirth, vacationDays)
+        {
+            HourlySalary = hourlySalary;
+            HoursWorked = hoursWorked;
+        }
         public PartTimeEmployee(string firstName, string lastName, DateTime dateOfBirth, double hourlySalary, int HoursWorked) : base(firstName, lastName, dateOfBirth)
         {
             HourlySalary = hourlySalary;
@@ -31,6 +37,11 @@ namespace EmployeeSystem.Models.Employees
         {
             double salaryAfterTax = HourlySalary - (HourlySalary * tax);
             return salaryAfterTax;
+        }
+
+        public override string GetEmployeeDetails()
+        {
+            return $"PT, {base.GetEmployeeDetails()},{hourlySalary},{hoursWorked}";
         }
     }
 }

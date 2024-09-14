@@ -36,6 +36,11 @@ namespace EmployeeSystem.Models.Employees
             MonthlySalary = monthlySalary;
             VacationDays = 25;
         }
+        public FullTimeEmployee(string employeeId, string firstName, string lastName, string email, DateTime dateOfBirth, double monthlySalary, DateTime dateOfEmployment, int vacationDays) : base(employeeId, firstName, lastName, email, dateOfBirth, vacationDays)
+        {
+            MonthlySalary = monthlySalary;
+            DateOfEmployment = dateOfEmployment;
+        }
 
         public override double CalculateSalary()
         {
@@ -58,6 +63,11 @@ namespace EmployeeSystem.Models.Employees
             }
 
             return 0;
+        }
+
+        public override string GetEmployeeDetails()
+        {
+            return $"FT,{base.GetEmployeeDetails()},{MonthlySalary},{dateOfEmployment.ToShortDateString()}";
         }
     }
 }
