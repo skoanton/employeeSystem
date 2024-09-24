@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/EmployeeSystem.csproj": {}
+    "/home/mrdavinski/repo/personal-projects/employeeSystem/src/EmployeeSystem/EmployeeSystem.csproj": {}
   },
   "projects": {
-    "/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/EmployeeSystem.csproj": {
+    "/home/mrdavinski/repo/personal-projects/employeeSystem/src/EmployeeSystem/EmployeeSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/EmployeeSystem.csproj",
+        "projectUniqueName": "/home/mrdavinski/repo/personal-projects/employeeSystem/src/EmployeeSystem/EmployeeSystem.csproj",
         "projectName": "EmployeeSystem",
-        "projectPath": "/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/EmployeeSystem.csproj",
+        "projectPath": "/home/mrdavinski/repo/personal-projects/employeeSystem/src/EmployeeSystem/EmployeeSystem.csproj",
         "packagesPath": "/home/mrdavinski/.nuget/packages/",
-        "outputPath": "/home/mrdavinski/repos/csharp/employeeSystem/src/EmployeeSystem/obj/",
+        "outputPath": "/home/mrdavinski/repo/personal-projects/employeeSystem/src/EmployeeSystem/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/mrdavinski/.nuget/NuGet/NuGet.Config"
