@@ -6,7 +6,7 @@ Utilities utilities = new Utilities(company);
 EmployeeManagementUtilities employeeManagementUtilities = new EmployeeManagementUtilities(company);
 SalaryUtilities salaryUtilities = new SalaryUtilities(company, employeeManagementUtilities);
 
-
+Console.WriteLine("Test");
 
 string choice;
 do
